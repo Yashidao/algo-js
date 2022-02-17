@@ -1,8 +1,13 @@
 const readlineSync = require("readline-sync");
 
-let name = "Jean";
-let nameSister = "Emma";
-console.log("My name is " + name);
+let fav = readlineSync.question("Entrer votre nombre favori: ");
 
-let userName = readlineSync.question("What's your name?");
-console.log("He's called " + userName);
+while (fav != 42){
+    if(fav == 42){
+        console.log("Vous avez trouvé votre nombre favori!");
+        break;
+    }
+    else{
+        fav = readlineSync.question("Entrer votre nombre favori: ");
+    }
+}
