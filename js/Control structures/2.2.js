@@ -5,6 +5,9 @@ console.log("Entrer 3 nombres chacun à leur tour: minimum, maximum et un nombre
 let min = readlineSync.question("Entrer le nombre minimum: ");
 let max = readlineSync.question("Entrer le nombre maxmum: ");
 
+min = parseInt(min);
+max = parseInt(max);
+
 if(min < max){
     let current = readlineSync.question("Entrer le nombre choisis: ");
     if(min < current && current < max){
