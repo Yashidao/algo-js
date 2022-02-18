@@ -8,7 +8,7 @@ Dans ce repo, je fais quelques exercice en JavaScript
 
 [01. Introduction](js/Introduction)
 
-[02. Control structures](js/Control\structures)
+[02. Control structures](js/Control structures/)
 
 [03. Arrays](js/Arrays)
 
