@@ -17,7 +17,7 @@ function askTvSerie(){
     }
     return;
 }
-function randomizeCast(){
+function randomizeCast(choice){
     if(choice == "Arrow")
     {
         choice = 0;
@@ -26,8 +26,10 @@ function randomizeCast(){
         choice = 1;
     }
     let a = tvObjetc[choice].castMembers;
+    let b = tvObjetc[choice];
     a = a.sort(() => Math.random() - 0.5);
-    return a;
+    b.castMembers = a;
+    console.log(b);
+    return;
 }
-
-console.log(askTvSerie()+"\n" +randomizeCast(choice));
+console.log(askTvSerie() +"\n" + randomizeCast(choice));
